@@ -1,0 +1,236 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern Portfolio Design System for Shivam Modi
+All colors MUST be HSL for proper theme switching */
+
+@layer base {
+  :root {
+    /* Brand Colors - Modern Blue/Purple Gradient Palette */
+    --primary: 250 84% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 250 84% 55%;
+    --primary-glow: 250 84% 70%;
+    
+    /* Hero Gradient Colors */
+    --hero-primary: 250 84% 60%;
+    --hero-secondary: 270 75% 65%;
+    --hero-accent: 280 70% 70%;
+    
+    /* Background System */
+    --background: 0 0% 100%;
+    --background-secondary: 240 10% 98%;
+    --foreground: 240 10% 3.9%;
+    --foreground-secondary: 240 5% 25%;
+
+    /* Card System */
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --card-hover: 240 5% 96%;
+
+    /* Interactive Elements */
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --secondary-hover: 240 5% 90%;
+    
+    --accent: 250 84% 60%;
+    --accent-foreground: 0 0% 100%;
+    
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 45%;
+
+    /* UI Elements */
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 250 84% 60%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Animation & Effect Variables */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--hero-primary)), hsl(var(--hero-secondary)), hsl(var(--hero-accent)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--background-secondary)) 100%);
+    --shadow-soft: 0 2px 20px -2px hsl(var(--primary) / 0.1);
+    --shadow-strong: 0 8px 40px -4px hsl(var(--primary) / 0.2);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.3);
+    
+    /* Animation Timing */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark Theme - Modern Dark Mode */
+    --primary: 250 84% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 250 84% 55%;
+    --primary-glow: 250 84% 70%;
+    
+    /* Dark Hero Gradients */
+    --hero-primary: 250 84% 60%;
+    --hero-secondary: 270 75% 65%;
+    --hero-accent: 280 70% 70%;
+    
+    /* Dark Backgrounds */
+    --background: 240 10% 3.9%;
+    --background-secondary: 240 10% 8%;
+    --foreground: 0 0% 98%;
+    --foreground-secondary: 240 5% 80%;
+
+    /* Dark Cards */
+    --card: 240 10% 8%;
+    --card-foreground: 0 0% 98%;
+    --card-hover: 240 10% 12%;
+
+    /* Dark Interactive Elements */
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-hover: 240 4% 20%;
+    
+    --accent: 250 84% 60%;
+    --accent-foreground: 0 0% 100%;
+    
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 65%;
+
+    /* Dark UI Elements */
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 250 84% 60%;
+    --popover: 240 10% 8%;
+    --popover-foreground: 0 0% 98%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Dark Mode Gradients & Effects */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--hero-primary)), hsl(var(--hero-secondary)), hsl(var(--hero-accent)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--background-secondary)) 100%);
+    --shadow-soft: 0 2px 20px -2px hsl(var(--primary) / 0.2);
+    --shadow-strong: 0 8px 40px -4px hsl(var(--primary) / 0.3);
+    --shadow-glow: 0 0 60px hsl(var(--primary-glow) / 0.4);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground transition-colors duration-500;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Hero Section Styles */
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .card-gradient {
+    background: var(--gradient-card);
+  }
+
+  /* Animation Classes */
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.8s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scale-in 0.5s ease-out forwards;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* Hover Effects */
+  .hover-lift {
+    transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-strong);
+  }
+
+  .hover-glow:hover {
+    box-shadow: var(--shadow-glow);
+  }
+
+  /* Theme Toggle Animation */
+  .theme-transition * {
+    transition: background-color var(--transition-slow), 
+                color var(--transition-slow), 
+                border-color var(--transition-slow);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Scrollbar utilities */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
