@@ -41,14 +41,3 @@ npm run dev
 * shadcn-ui
 
 ---
-
-## 🚀 Deployment on Vercel
-
-1. Go to "https://shivam-modi-hxom.vercel.app/" and log in.
-2. Click **New Project** → **Import Git Repository**.
-3. Select your portfolio GitHub repository.
-4. Configure project settings (Vite automatically detected).
-5. Click **Deploy**.
-6. Your portfolio will be live at a Vercel-generated domain, which you can customize later.
-
----
