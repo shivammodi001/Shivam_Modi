@@ -14,7 +14,7 @@ Check out the live portfolio here:
 ## �� GitHub Repository
 
 Clone or explore the code here:
-[Shivam Modi Portfolio Repo](https://github.com/your-username/portfolio)
+[Shivam Modi Portfolio Repo](https://github.com/shivammodi001/Shivam_Modi)
 
 ```sh
 # Clone the repository
