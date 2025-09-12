@@ -210,7 +210,7 @@ const Certifications: React.FC = () => {
             {[
               {
                 name: "LeetCode",
-                url: "https://leetcode.com/u/smodi9846/",
+                url: "https://leetcode.com/u/shivam-modi001/",
                 logo: "https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png",
               },
               {
