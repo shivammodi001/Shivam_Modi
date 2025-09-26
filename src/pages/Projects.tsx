@@ -22,6 +22,22 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
+      title: "FoodHub",
+      description:
+        "A MERN-based food ordering and management application with authentication, food item management, order tracking, and secure payment integration.",
+      technologies: [
+        "MongoDB",
+        "Express.js",
+        "React",
+        "Node.js",
+        "TailwindCSS",
+      ],
+      githubUrl: "https://github.com/shivammodi001/FoodHub",
+      liveUrl: "https://foodhub-frontend-yl92.onrender.com/", 
+      image: "/foodhub.png",
+    },
+    {
+      id: 2,
       title: "EliteCode",
       description:
         "An online coding platform where users can practice coding problems, submit solutions, and improve their problem-solving skills.",
@@ -31,17 +47,17 @@ const Projects: React.FC = () => {
       image: "/elitecode.png",
     },
     {
-      id: 2,
+      id: 3,
       title: "Socket Chat",
       description:
         "A real-time chat application built with WebSockets that allows multiple users to communicate instantly with features like online status and message history.",
       technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
       githubUrl: "https://github.com/shivammodi001/chat-app",
-      liveUrl: "https://chat-app-ma0l.onrender.com",
+      liveUrl: "https://chat-app-epcp.onrender.com/",
       image: "/socket-chat.png",
     },
     {
-      id: 3,
+      id: 4,
       title: "Swiggy Clone",
       description:
         "A food delivery web application inspired by Swiggy, featuring restaurant listings, menu browsing, cart management, and order checkout.",
@@ -51,7 +67,7 @@ const Projects: React.FC = () => {
       image: "/swiggy-clone.png",
     },
     {
-      id: 4,
+      id: 5,
       title: "YouTube Clone",
       description:
         "A video streaming platform that replicates core YouTube features like video browsing, search, likes, comments, and responsive UI.",
@@ -61,7 +77,7 @@ const Projects: React.FC = () => {
       image: "/youtube-clone.png",
     },
     {
-      id: 5,
+      id: 6,
       title: "Agri ChatBot",
       description:
         "An AI-powered chatbot designed for farmers to provide crop suggestions, weather updates, and basic farming tips in regional languages.",
@@ -71,7 +87,7 @@ const Projects: React.FC = () => {
       image: "/agri-chatbot.png",
     },
     {
-      id: 6,
+      id: 7,
       title: "TicTacToe Game",
       description:
         "A classic TicTacToe game with multiplayer support and interactive UI, built for fun and learning game logic implementation.",
@@ -81,7 +97,7 @@ const Projects: React.FC = () => {
       image: "/tictactoe.png",
     },
     {
-      id: 7,
+      id: 8,
       title: "Calculator",
       description:
         "A simple calculator application built with HTML, CSS, and JavaScript, featuring basic arithmetic operations and a user-friendly interface.",
@@ -90,6 +106,7 @@ const Projects: React.FC = () => {
       liveUrl: "https://shivammodi001.github.io/Calculator/",
       image: "/calculator.png",
     },
+    
   ];
 
   useEffect(() => {
