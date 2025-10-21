@@ -223,6 +223,7 @@ const Certifications: React.FC = () => {
                 url: "https://www.codechef.com/users/shivammodi001",
                 logo: "https://upload.wikimedia.org/wikipedia/commons/0/08/CodeChef_Logo.svg",
               },
+             
             ].map((profile, index) => (
               <a
                 key={profile.name}

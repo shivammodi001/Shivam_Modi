@@ -72,6 +72,21 @@ const Home: React.FC = () => {
               </a>
 
               <a
+                href="https://codolio.com/profile/Shivam-modi"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="hover:scale-110 hover:bg-secondary transition-all"
+                >
+                  <img src="/codolio.png" className="h-10 w-10 text-white" />
+                </Button>
+              </a>
+
+
+              <a
                 href="https://www.linkedin.com/in/shivam-modi-370509295/"
                 target="_blank"
                 rel="noopener noreferrer"
